@@ -8,6 +8,9 @@ export const arraytoLinkedList = (array) => {
     let firstNode;
     let previousNode;
     let currentNode;
+    if(array.length === 0) {
+        return null;
+    }
     array.forEach((value) => {
         currentNode = {
             val: value,
